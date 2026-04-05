@@ -1,5 +1,5 @@
 import { Shield, TreePine, Fish } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+
 import logo from "@/assets/bakaus-logo.png";
 
 const features = [
@@ -28,12 +28,13 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Hero */}
       <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-        <img
-          src={heroBg}
-          alt="Aerial view of mangrove forests meeting the ocean"
+        <video
+          src="/videos/Bakaus_Intro_1.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          width={1920}
-          height={1080}
         />
         <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
         <div className="relative z-10 flex flex-col items-center text-center px-6 animate-fade-up">
@@ -63,6 +64,22 @@ const Index = () => {
             biodiversity. Protecting and restoring them offers a powerful
             nature-based solution, aligning climate mitigation, adaptation, and
             ecosystem resilience in one living system.
+          </p>
+        </div>
+      </section>
+
+      {/* Welcome */}
+      <section className="py-24 px-6 bg-card">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+            Welcome to Bakaus Island
+          </h2>
+          <div className="w-16 h-0.5 bg-primary mx-auto mb-8" />
+          <p className="text-lg leading-relaxed text-muted-foreground font-body">
+            Bakaus Island and its village are under threat from climate change.
+            Rising seas and stronger storms are putting its future at risk. But
+            there is still time. By restoring a thriving mangrove forest, we can
+            help protect the island — and the people who call it home.
           </p>
         </div>
       </section>
