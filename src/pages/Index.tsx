@@ -1,5 +1,5 @@
 import { Shield, TreePine, Fish } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+
 import logo from "@/assets/bakaus-logo.png";
 
 const features = [
