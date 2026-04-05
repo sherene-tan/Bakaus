@@ -4,28 +4,24 @@ import logo from "@/assets/bakaus-logo.png";
 
 const features = [
   {
-    icon: Shield,
     title: "Coastal Protection",
     description:
       "See how mangrove trees protect Bakaus Island from rising sea level and storm surges",
     media: { type: "video" as const, src: "/videos/Rising_Sea_Levels.mp4" },
   },
   {
-    icon: TreePine,
     title: "Species & Zones",
     description:
       "Discover how different mangrove species work together across coastal zones to stabilise the shoreline and form a barrier against storm surges",
     media: { type: "image" as const, src: "/images/Intro_Bruguiera.png" },
   },
   {
-    icon: Wind,
     title: "Carbon Absorption",
     description:
       "Watch how the mangrove trees absorb carbon dioxide from the atmosphere",
     media: { type: "video" as const, src: "/videos/High_Level_of_CO2.mp4" },
   },
   {
-    icon: Fish,
     title: "Coastal Wildlife",
     description:
       "Find out what wildlife dwells in this special zone between the land and sea",
