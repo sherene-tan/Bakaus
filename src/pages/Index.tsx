@@ -135,9 +135,6 @@ const Index = () => {
                   />
                 )}
                 <div className="p-6 flex flex-col items-center text-center">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <f.icon className="w-6 h-6 text-primary" />
-                  </div>
                   <h3 className="text-xl font-heading font-bold text-foreground mb-2">
                     {f.title}
                   </h3>
