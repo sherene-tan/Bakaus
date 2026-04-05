@@ -1,31 +1,27 @@
-import { Shield, TreePine, Fish, Wind } from "lucide-react";
+
 
 import logo from "@/assets/bakaus-logo.png";
 
 const features = [
   {
-    icon: Shield,
     title: "Coastal Protection",
     description:
       "See how mangrove trees protect Bakaus Island from rising sea level and storm surges",
     media: { type: "video" as const, src: "/videos/Rising_Sea_Levels.mp4" },
   },
   {
-    icon: TreePine,
     title: "Species & Zones",
     description:
       "Discover how different mangrove species work together across coastal zones to stabilise the shoreline and form a barrier against storm surges",
     media: { type: "image" as const, src: "/images/Intro_Bruguiera.png" },
   },
   {
-    icon: Wind,
     title: "Carbon Absorption",
     description:
       "Watch how the mangrove trees absorb carbon dioxide from the atmosphere",
     media: { type: "video" as const, src: "/videos/High_Level_of_CO2.mp4" },
   },
   {
-    icon: Fish,
     title: "Coastal Wildlife",
     description:
       "Find out what wildlife dwells in this special zone between the land and sea",
@@ -37,17 +33,17 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero */}
-      <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen min-h-[600px] flex items-end justify-center overflow-hidden">
         <video
           src="/videos/Leaderboard_Scene.mp4"
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
-        <div className="relative z-10 flex flex-col items-center text-center px-6 animate-fade-up">
+        <div className="relative z-10 flex flex-col items-center text-center px-6 pb-16 md:pb-24 animate-fade-up">
           <img
             src={logo}
             alt="Bakaus logo"
@@ -135,9 +131,6 @@ const Index = () => {
                   />
                 )}
                 <div className="p-6 flex flex-col items-center text-center">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <f.icon className="w-6 h-6 text-primary" />
-                  </div>
                   <h3 className="text-xl font-heading font-bold text-foreground mb-2">
                     {f.title}
                   </h3>
@@ -153,7 +146,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="py-10 text-center text-muted-foreground text-sm font-body border-t border-border space-y-1">
-        <p>Game created by Muhammad Hadi Ikhsan</p>
+        <p>Created by Muhammad Hadi Ikhsan</p>
         <p>© {new Date().getFullYear()} Bakaus. All rights reserved.</p>
       </footer>
     </div>
