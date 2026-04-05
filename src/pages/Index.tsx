@@ -68,6 +68,22 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Welcome */}
+      <section className="py-24 px-6 bg-card">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+            Welcome to Bakaus Island
+          </h2>
+          <div className="w-16 h-0.5 bg-primary mx-auto mb-8" />
+          <p className="text-lg leading-relaxed text-muted-foreground font-body">
+            Bakaus Island and its village are under threat from climate change.
+            Rising seas and stronger storms are putting its future at risk. But
+            there is still time. By restoring a thriving mangrove forest, we can
+            help protect the island — and the people who call it home.
+          </p>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="py-24 px-6 bg-card">
         <div className="max-w-5xl mx-auto">
