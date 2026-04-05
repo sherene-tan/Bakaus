@@ -1,4 +1,4 @@
-import { Shield, TreePine, Fish, Wind } from "lucide-react";
+
 
 import logo from "@/assets/bakaus-logo.png";
 
