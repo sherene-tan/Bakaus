@@ -1,4 +1,4 @@
-import { Shield, TreePine, Fish } from "lucide-react";
+import { Shield, TreePine, Fish, Wind } from "lucide-react";
 
 import logo from "@/assets/bakaus-logo.png";
 
@@ -7,19 +7,29 @@ const features = [
     icon: Shield,
     title: "Coastal Protection",
     description:
-      "See how mangrove trees protect coasts from storm surges",
+      "See how mangrove trees protect Bakaus Island from rising sea level and storm surges",
+    media: { type: "video" as const, src: "/videos/Rising_Sea_Levels.mp4" },
   },
   {
     icon: TreePine,
     title: "Species & Zones",
     description:
-      "Learn about how different mangrove species serve a unique function in each coastal zone, complementing each other to anchor the coast",
+      "Discover how different mangrove species work together across coastal zones to stabilise the shoreline and form a barrier against storm surges",
+    media: { type: "image" as const, src: "/images/Intro_Bruguiera.png" },
+  },
+  {
+    icon: Wind,
+    title: "Carbon Absorption",
+    description:
+      "Watch how the mangrove trees absorb carbon dioxide from the atmosphere",
+    media: { type: "video" as const, src: "/videos/High_Level_of_CO2.mp4" },
   },
   {
     icon: Fish,
     title: "Coastal Wildlife",
     description:
       "Find out what wildlife dwells in this special zone between the land and sea",
+    media: { type: "image" as const, src: "/images/coastal-wildlife.jpg" },
   },
 ];
 
@@ -29,7 +39,7 @@ const Index = () => {
       {/* Hero */}
       <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         <video
-          src="/videos/Bakaus_Intro_1.mp4"
+          src="/videos/Leaderboard_Scene.mp4"
           autoPlay
           muted
           loop
@@ -69,18 +79,29 @@ const Index = () => {
       </section>
 
       {/* Welcome */}
-      <section className="py-24 px-6 bg-card">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-            Welcome to Bakaus Island
-          </h2>
-          <div className="w-16 h-0.5 bg-primary mx-auto mb-8" />
-          <p className="text-lg leading-relaxed text-muted-foreground font-body">
-            Bakaus Island and its village are under threat from climate change.
-            Rising seas and stronger storms are putting its future at risk. But
-            there is still time. By restoring a thriving mangrove forest, we can
-            help protect the island — and the people who call it home.
-          </p>
+      <section className="relative py-0 overflow-hidden">
+        <video
+          src="/videos/Bakaus_Intro_1.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 py-24 px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+              Welcome to Bakaus Island
+            </h2>
+            <div className="w-16 h-0.5 bg-primary mx-auto mb-8" />
+            <p className="text-lg leading-relaxed text-white/80 font-body">
+              Bakaus Island and its village are under threat from climate change.
+              Rising seas and stronger storms are putting its future at risk. But
+              there is still time. By restoring a thriving mangrove forest, we can
+              help protect the island — and the people who call it home.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -90,21 +111,40 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16">
             Explore the Game
           </h2>
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-2 gap-10">
             {features.map((f) => (
               <div
                 key={f.title}
-                className="flex flex-col items-center text-center p-8 rounded-lg bg-background border border-border"
+                className="flex flex-col rounded-lg bg-background border border-border overflow-hidden"
               >
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <f.icon className="w-7 h-7 text-primary" />
+                {f.media.type === "video" ? (
+                  <video
+                    src={f.media.src}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full aspect-video object-cover"
+                  />
+                ) : (
+                  <img
+                    src={f.media.src}
+                    alt={f.title}
+                    loading="lazy"
+                    className="w-full aspect-video object-cover"
+                  />
+                )}
+                <div className="p-6 flex flex-col items-center text-center">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                    <f.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-heading font-bold text-foreground mb-2">
+                    {f.title}
+                  </h3>
+                  <p className="text-muted-foreground font-body leading-relaxed">
+                    {f.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-heading font-bold text-foreground mb-3">
-                  {f.title}
-                </h3>
-                <p className="text-muted-foreground font-body leading-relaxed">
-                  {f.description}
-                </p>
               </div>
             ))}
           </div>
@@ -112,8 +152,9 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-10 text-center text-muted-foreground text-sm font-body border-t border-border">
-        © {new Date().getFullYear()} Bakaus. All rights reserved.
+      <footer className="py-10 text-center text-muted-foreground text-sm font-body border-t border-border space-y-1">
+        <p>Game created by Muhammad Hadi Ikhsan</p>
+        <p>© {new Date().getFullYear()} Bakaus. All rights reserved.</p>
       </footer>
     </div>
   );
