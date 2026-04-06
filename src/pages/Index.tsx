@@ -69,7 +69,7 @@ const Index = () => {
             and storing carbon, protecting coasts, and supporting rich
             biodiversity. Protecting and restoring them offers a powerful
             nature-based solution, aligning climate mitigation, adaptation, and
-            ecosystem resilience in one living system.
+            community resilience in one living system.
           </p>
         </div>
       </section>
