@@ -33,7 +33,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero */}
-      <section className="relative h-screen min-h-[600px] flex items-start justify-start overflow-hidden">
+      <section className="relative h-screen min-h-[600px] flex items-end justify-center overflow-hidden">
         <video
           src="/videos/Leaderboard_Scene.mp4"
           autoPlay
@@ -43,7 +43,7 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover object-right"
         />
         <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
-        <div className="relative z-10 flex flex-col items-start text-left px-8 md:px-16 pt-16 md:pt-24 animate-fade-up">
+        <div className="relative z-10 flex flex-col items-center text-center w-full pb-16 md:pb-24 mt-auto animate-fade-up">
           <img
             src={logo}
             alt="Bakaus logo"
