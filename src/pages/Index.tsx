@@ -146,7 +146,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="py-10 text-center text-muted-foreground text-sm font-body border-t border-border space-y-1">
-        <p>Created by Muhammad Hadi Ikhsan</p>
+        <p>Created by Muhammad Hadi Ikhsan.</p>
         <p>© {new Date().getFullYear()} Bakaus. All rights reserved.</p>
       </footer>
     </div>
