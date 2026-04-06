@@ -43,13 +43,13 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover object-right"
         />
         <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-black/70 to-transparent z-[5]" />
-        <div className="relative z-10 flex flex-col items-start text-left px-8 md:px-16 pt-16 md:pt-24 animate-fade-up">
+        <div className="relative z-10 flex flex-col items-start text-left px-8 md:px-16 pt-10 md:pt-16 animate-fade-up">
           <img
             src={logo}
             alt="Bakaus logo"
             className="w-72 md:w-96 lg:w-[28rem] mb-4 drop-shadow-2xl"
           />
-          <p className="font-body text-sm md:text-base tracking-wide text-white/80 max-w-sm">
+          <p className="font-body text-sm md:text-base tracking-wide text-white/50 max-w-sm">
             Where nature meets the fight against climate change
           </p>
         </div>
