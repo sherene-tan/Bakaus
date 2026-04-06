@@ -49,7 +49,7 @@ const Index = () => {
             alt="Bakaus logo"
             className="w-72 md:w-96 lg:w-[28rem] mb-4 drop-shadow-2xl"
           />
-          <p className="font-body text-sm md:text-base tracking-wide text-white/50 max-w-sm">
+          <p className="font-body text-sm md:text-base tracking-wide text-white/70 max-w-sm">
             Where nature meets the fight against climate change
           </p>
         </div>
