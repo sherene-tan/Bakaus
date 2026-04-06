@@ -92,10 +92,10 @@ const Index = () => {
             </h2>
             <div className="w-16 h-0.5 bg-primary mx-auto mb-8" />
             <p className="text-lg leading-relaxed text-white/80 font-body">
-              Bakaus Island and its village are under threat from climate change.
-              Rising seas and stronger storms are putting its future at risk. But
-              there is still time. By restoring a thriving mangrove forest, we can
-              help protect the island — and the people who call it home.
+              Bakaus Island and its village are under threat. Rising seas and
+              stronger storm surges are putting its future at risk. But there is
+              still time. By restoring a thriving mangrove forest, we can help
+              protect the island — and the people who call it home.
             </p>
           </div>
         </div>
