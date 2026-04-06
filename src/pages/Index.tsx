@@ -33,23 +33,23 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero */}
-      <section className="relative h-screen min-h-[600px] flex items-end justify-center overflow-hidden">
+      <section className="relative h-screen min-h-[600px] flex items-start justify-start overflow-hidden">
         <video
           src="/videos/Leaderboard_Scene.mp4"
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover object-right"
         />
         <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
-        <div className="relative z-10 flex flex-col items-center text-center px-6 pb-16 md:pb-24 animate-fade-up">
+        <div className="relative z-10 flex flex-col items-start text-left px-8 md:px-16 pt-16 md:pt-24 animate-fade-up">
           <img
             src={logo}
             alt="Bakaus logo"
             className="w-64 md:w-80 lg:w-96 mb-6 drop-shadow-2xl"
           />
-          <p className="font-body text-lg md:text-xl tracking-wide text-primary-foreground/80 max-w-md">
+          <p className="font-body text-lg md:text-xl tracking-wide text-white max-w-md">
             Where nature meets the fight against climate change
           </p>
         </div>
@@ -69,7 +69,7 @@ const Index = () => {
             and storing carbon, protecting coasts, and supporting rich
             biodiversity. Protecting and restoring them offers a powerful
             nature-based solution, aligning climate mitigation, adaptation, and
-            ecosystem resilience in one living system.
+            community resilience in one living system.
           </p>
         </div>
       </section>
@@ -92,10 +92,10 @@ const Index = () => {
             </h2>
             <div className="w-16 h-0.5 bg-primary mx-auto mb-8" />
             <p className="text-lg leading-relaxed text-white/80 font-body">
-              Bakaus Island and its village are under threat from climate change.
-              Rising seas and stronger storms are putting its future at risk. But
-              there is still time. By restoring a thriving mangrove forest, we can
-              help protect the island — and the people who call it home.
+              Bakaus Island and its village are under threat. Rising seas and
+              stronger storm surges are putting its future at risk. But there is
+              still time. By restoring a thriving mangrove forest, we can help
+              protect the island — and the people who call it home.
             </p>
           </div>
         </div>
@@ -146,7 +146,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="py-10 text-center text-muted-foreground text-sm font-body border-t border-border space-y-1">
-        <p>Created by Muhammad Hadi Ikhsan</p>
+        <p>Created by Muhammad Hadi Ikhsan.</p>
         <p>© {new Date().getFullYear()} Bakaus. All rights reserved.</p>
       </footer>
     </div>
