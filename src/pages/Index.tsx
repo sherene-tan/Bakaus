@@ -43,6 +43,7 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover object-right"
         />
         <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
+        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-black/70 to-transparent z-[5]" />
         <div className="relative z-10 flex flex-col items-center text-center w-full pb-16 md:pb-24 mt-auto animate-fade-up">
           <img
             src={logo}
