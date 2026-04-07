@@ -47,9 +47,9 @@ const Index = () => {
           <img
             src={logo}
             alt="Bakaus logo"
-            className="w-44 md:w-96 lg:w-[28rem] mb-2 md:mb-4 drop-shadow-2xl"
+            className="w-64 md:w-96 lg:w-[28rem] mb-2 md:mb-4 drop-shadow-2xl"
           />
-          <p className="font-body text-xs md:text-base tracking-wide max-w-[200px] md:max-w-sm text-gray-700 max-md:text-left md:text-center px-0 md:px-[25px] py-0 font-semibold">
+          <p className="font-body text-sm md:text-base tracking-wide max-w-[300px] md:max-w-sm text-gray-700 max-md:text-left md:text-center px-0 md:px-[25px] py-0 font-semibold">
             Where nature meets the fight against climate change
           </p>
         </div>
