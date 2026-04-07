@@ -88,7 +88,7 @@ const Index = () => {
         <div className="relative z-10 py-24 px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-              Welcome to Bakaus Island
+              Welcome to Bakaus
             </h2>
             <div className="w-16 h-0.5 bg-primary mx-auto mb-8" />
             <p className="text-lg leading-relaxed text-white/80 font-body">
