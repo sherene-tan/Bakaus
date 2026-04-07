@@ -6,25 +6,25 @@ const features = [
   {
     title: "Coastal Protection",
     description:
-      "See how mangrove trees protect Bakaus Island from rising sea level and storm surges",
+      "See how mangrove trees protect Bakaus Island from rising sea level and storm surges.",
     media: { type: "video" as const, src: "/videos/Rising_Sea_Levels.mp4" },
   },
   {
     title: "Species & Zones",
     description:
-      "Discover how different mangrove species work together across coastal zones to stabilise the shoreline and form a barrier against storm surges",
+      "Discover how different mangrove species work together across coastal zones to stabilise the shoreline and form a barrier against storm surges.",
     media: { type: "image" as const, src: "/images/Intro_Bruguiera.png" },
   },
   {
     title: "Carbon Absorption",
     description:
-      "Watch how the mangrove trees absorb carbon dioxide from the atmosphere",
+      "Watch how the mangrove trees absorb carbon dioxide from the atmosphere.",
     media: { type: "video" as const, src: "/videos/High_Level_of_CO2.mp4" },
   },
   {
-    title: "Coastal Wildlife",
+    title: "Meet Coastal Wildlife",
     description:
-      "Find out what wildlife dwells in this special zone between the land and sea",
+      "Find out what wildlife dwells in this special zone between the land and sea.",
     media: { type: "image" as const, src: "/images/coastal-wildlife.jpg" },
   },
 ];
@@ -56,7 +56,7 @@ const Index = () => {
       </section>
 
       {/* About */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 bg-muted">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
             What if nature holds the key to climate change too?
@@ -102,10 +102,10 @@ const Index = () => {
       </section>
 
       {/* Features */}
-      <section className="py-24 px-6 bg-card">
+      <section className="py-24 px-6 bg-muted">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16">
-            Explore the Game
+            Features of the Game
           </h2>
           <div className="grid md:grid-cols-2 gap-10">
             {features.map((f) => (
