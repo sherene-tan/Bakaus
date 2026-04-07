@@ -22,9 +22,9 @@ const features = [
     media: { type: "video" as const, src: "/videos/High_Level_of_CO2.mp4" },
   },
   {
-    title: "Meet Coastal Wildlife",
+    title: "Coastal Wildlife",
     description:
-      "Find out what wildlife dwells in this special zone between the land and sea.",
+      "Meet the wildlife that dwell in this special zone between the land and sea.",
     media: { type: "image" as const, src: "/images/coastal-wildlife.jpg" },
   },
 ];
@@ -105,7 +105,7 @@ const Index = () => {
       <section className="py-24 px-6 bg-muted">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16">
-            Features of the Game
+            Explore the Game
           </h2>
           <div className="grid md:grid-cols-2 gap-10">
             {features.map((f) => (
