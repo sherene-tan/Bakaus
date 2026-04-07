@@ -22,9 +22,9 @@ const features = [
     media: { type: "video" as const, src: "/videos/High_Level_of_CO2.mp4" },
   },
   {
-    title: "Meet Coastal Wildlife",
+    title: "Coastal Wildlife",
     description:
-      "Find out what wildlife dwells in this special zone between the land and sea.",
+      "Meet the wildlife that dwell in this special zone between the land and sea.",
     media: { type: "image" as const, src: "/images/coastal-wildlife.jpg" },
   },
 ];
