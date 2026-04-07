@@ -40,7 +40,7 @@ const Index = () => {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover object-right"
+          className="absolute inset-0 w-full h-full object-cover object-right md:object-right max-md:object-[60%_center]"
         />
         <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-black/70 to-transparent z-[5]" />
         <div className="relative z-10 flex flex-col items-start text-left px-8 md:px-16 pt-10 md:pt-16 animate-fade-up">
