@@ -1,0 +1,5 @@
+git checkout -b upgrade-vite
+npm install vite@latest
+npm install @vitejs/plugin-react@latest
+npm run dev
+npm run build
