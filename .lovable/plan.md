@@ -1,10 +1,15 @@
 
 
-## Replace Coastal Wildlife Image
+## Remove Unnecessary Lockfiles
 
-Replace the current `coastal-wildlife.jpg` image in the "Coastal Wildlife" feature card with the uploaded `Wildlife_Scene_New.jpg`.
+The project has multiple lockfiles that should be cleaned up:
 
-### Steps
-1. Copy `user-uploads://Wildlife_Scene_New.jpg` to `public/images/Wildlife_Scene_New.jpg`
-2. Update the `features` array in `src/pages/Index.tsx` — change the "Coastal Wildlife" entry's `media.src` from `/images/coastal-wildlife.jpg` to `/images/Wildlife_Scene_New.jpg`
+1. **`bun.lock`** — text-based Bun lockfile (keep if using Bun)
+2. **`bun.lockb`** — binary Bun lockfile (redundant with `bun.lock`)
+3. **`package-lock.json`** — npm lockfile (redundant if using Bun)
+
+### Plan
+- Delete `bun.lockb` (old binary format, superseded by `bun.lock`)
+- Delete `package-lock.json` (npm lockfile, not needed when using Bun)
+- Keep `bun.lock` as the single lockfile
 
