@@ -25,7 +25,7 @@ const features = [
     title: "Coastal Wildlife",
     description:
       "Meet the wildlife that dwell in this special zone between the land and sea.",
-    media: { type: "image" as const, src: "/images/coastal-wildlife.jpg" },
+    media: { type: "image" as const, src: "/images/Wildlife_Scene_New.jpg" },
   },
 ];
 
